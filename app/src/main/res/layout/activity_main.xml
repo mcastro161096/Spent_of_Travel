@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Distância"
+        android:inputType="numberDecimal"
+        android:digits="0123456789.,"/>
+
+    <EditText
+        android:id="@+id/preco"
+        android:layout_below="@+id/distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Preço"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:digits="0123456789.,"/>
+
+    <EditText
+        android:id="@+id/autonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Autonomia"
+        android:inputType="numberDecimal"
+        android:digits="0123456789.,"/>
+
+    <TextView
+        android:id="@+id/lp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preco"
+        android:layout_centerHorizontal="true"
+        android:text="Preço por Litro" />
+
+    <TextView
+        android:id="@+id/ld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distancia"
+        android:layout_centerHorizontal="true"
+        android:text="Total de quilômetros" />
+
+    <TextView
+        android:id="@+id/la"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autonomia"
+        android:layout_centerHorizontal="true"
+        android:text="KMs por Litro" />
+
+    <TextView
+        android:id="@+id/ltotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/la"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="SEU GASTO TOTAL SERÁ DE:" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ltotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="R$ 0" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:layout_marginTop="20dp"
+        android:text="Calcular" />
+
+
+</RelativeLayout>

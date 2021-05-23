@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spent of Travel</string>
+    <string name="ld">Total de quilômetros</string>
+    <string name="lp">Preço por Litro</string>
+    <string name="la">KMs por Litro</string>
+    <string name="hd">Distância</string>
+    <string name="hp">Preço</string>
+    <string name="ha">Autonomia</string>
+    <string name="ltotal" >SEU GASTO TOTAL SERÁ DE:</string>
+</resources>
